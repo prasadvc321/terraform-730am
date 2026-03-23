@@ -10,7 +10,7 @@ module "vpc" {
 module "ec2" {
    source        = "./modules/ec2"
    ami_id        = "ami-02dfbd4ff395f2a1b"  # Replace with valid AMI
-   instance_type = "t2.micro"
+   instance_type = "t3.micro"
    subnet_1_id     = module.vpc.subnet_1_id
 }
 
